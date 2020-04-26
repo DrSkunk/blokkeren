@@ -101,8 +101,11 @@ export default class Tetris extends Component {
     ],
     //score: 0, // the current score
     rows: 0, // number of completed rows in the current game
+    rowsPlayerOne: 0,
+    rowsPlayerTwo: 0,
     // step:0 // how long before current piece drops by 1 row
     remainingBlocks: 0, // how many blocks can you play
+    isPlayerOne: true,
   };
 
   randomPiece = () => {
@@ -281,7 +284,13 @@ export default class Tetris extends Component {
       }
     }
     if (n > 0) {
-      this.setState((state) => ({ rows: state.rows + n }));
+      this.setState((state) => {
+        if (state.isPlayerOne) {
+          return { rowsPlayerOne: state.rowsPlayerOne + n };
+        } else {
+          return { rowsPlayerTwo: state.rowsPlayerTwo + n };
+        }
+      });
     }
   };
 
@@ -468,11 +477,18 @@ export default class Tetris extends Component {
     const nextBlock = this.renderNext();
     const court = this.renderCourt();
     console.log('render');
-    const { playing, rows, remainingBlocks } = this.state;
+    const {
+      playing,
+      isPlayerOne,
+      rowsPlayerOne,
+      rowsPlayerTwo,
+      remainingBlocks,
+    } = this.state;
     return (
       <div style={{ width: 400 }} tabIndex="0">
-        <div>Score: {rows * 50}</div>
-        <div>Gemaakte lijnen: {rows}</div>
+        <div>Huidige speler: {isPlayerOne ? '1' : '2'}</div>
+        <div>Score speler 1: {rowsPlayerOne * 50}</div>
+        <div>Score speler 2: {rowsPlayerTwo * 50}</div>
         <div>Resterende blokken: {remainingBlocks}</div>
         {nextBlock}
         {court}
@@ -497,6 +513,15 @@ export default class Tetris extends Component {
           </div>
           <div>
             <button onClick={() => this.addBlocks(5)}>Geef 5 blokken</button>
+          </div>
+          <div>
+            <button
+              onClick={() => {
+                this.setState((state) => ({ isPlayerOne: !state.isPlayerOne }));
+              }}
+            >
+              Wissel speler
+            </button>
           </div>
         </div>
         {/* <pre>Current: {JSON.stringify(this.state.current, null, 2)}</pre>
