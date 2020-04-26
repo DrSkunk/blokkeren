@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/blokkeren/static/css/main.77670686.chunk.css",
+    "main.js": "/blokkeren/static/js/main.dffa4ad6.chunk.js",
+    "main.js.map": "/blokkeren/static/js/main.dffa4ad6.chunk.js.map",
+    "runtime-main.js": "/blokkeren/static/js/runtime-main.f6b1fe95.js",
+    "runtime-main.js.map": "/blokkeren/static/js/runtime-main.f6b1fe95.js.map",
+    "static/js/2.ed0f8aeb.chunk.js": "/blokkeren/static/js/2.ed0f8aeb.chunk.js",
+    "static/js/2.ed0f8aeb.chunk.js.map": "/blokkeren/static/js/2.ed0f8aeb.chunk.js.map",
+    "index.html": "/blokkeren/index.html",
+    "precache-manifest.511a1dc3ca945f574d31a39a6b6594ab.js": "/blokkeren/precache-manifest.511a1dc3ca945f574d31a39a6b6594ab.js",
+    "service-worker.js": "/blokkeren/service-worker.js",
+    "static/css/main.77670686.chunk.css.map": "/blokkeren/static/css/main.77670686.chunk.css.map",
+    "static/js/2.ed0f8aeb.chunk.js.LICENSE.txt": "/blokkeren/static/js/2.ed0f8aeb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6b1fe95.js",
+    "static/js/2.ed0f8aeb.chunk.js",
+    "static/css/main.77670686.chunk.css",
+    "static/js/main.dffa4ad6.chunk.js"
+  ]
+}
