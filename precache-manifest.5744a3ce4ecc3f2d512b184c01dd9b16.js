@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21831d3b44442d59963f502d3406a2dd",
+    "revision": "24c2dfc67e651561387f64a9a2480db4",
     "url": "/blokkeren/index.html"
   },
   {
-    "revision": "bf8dfb4be21b2aead9db",
+    "revision": "4fb5302f0ba5fbd77b19",
     "url": "/blokkeren/static/css/main.77670686.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blokkeren/static/js/2.ed0f8aeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf8dfb4be21b2aead9db",
-    "url": "/blokkeren/static/js/main.dffa4ad6.chunk.js"
+    "revision": "4fb5302f0ba5fbd77b19",
+    "url": "/blokkeren/static/js/main.0469f232.chunk.js"
   },
   {
     "revision": "385edfad52e10590d879",
